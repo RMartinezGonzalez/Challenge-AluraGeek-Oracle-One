@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+@layer components {
+  .name-transition {
+    @apply relative after:content-[''] after:absolute after:w-full after:h-[2px] after:top-[-1px] after:left-0 after:bg-clr-neutral-900 after:scale-x-0 after:transition-all hover:after:scale-x-100 text-clr-neutral-900;
+  }
+}
