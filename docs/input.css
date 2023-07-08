@@ -8,6 +8,18 @@ body {
 
 @layer components {
   .name-transition {
-    @apply relative after:content-[''] after:absolute after:w-full after:h-[2px] after:top-[-1px] after:left-0 after:bg-clr-neutral-900 after:scale-x-0 after:transition-all hover:after:scale-x-100 text-clr-neutral-900;
+    @apply relative after:content-[''] after:absolute after:w-full after:h-[2px] after:top-[-1px] after:left-0 after:bg-Alabaster after:scale-x-0 after:transition-all hover:after:scale-x-100 text-Alabaster;
+  }
+  .btn {
+    @apply py-3 px-4 font-semibold text-sm text-center border border-Alabaster rounded transition-transform hover:scale-105 xl:p-4;
+  }
+  .product {
+    @apply grid gap-2 content-center;
+  }
+  .product-container {
+    @apply aspect-[156/174] max-h-[156px] max-w-[174px] overflow-hidden md:aspect-[164/174];
+  }
+  .product-img {
+    @apply h-full w-full object-cover;
   }
 }
