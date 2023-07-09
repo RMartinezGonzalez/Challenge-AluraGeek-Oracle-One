@@ -910,9 +910,9 @@ video {
   border-top-left-radius: 0.25rem;
 }
 
-.bg-Alabaster {
+.bg-Alto {
   --tw-bg-opacity: 1;
-  background-color: rgb(250 250 250 / var(--tw-bg-opacity));
+  background-color: rgb(207 207 207 / var(--tw-bg-opacity));
 }
 
 .bg-Tundora {
@@ -924,13 +924,8 @@ video {
   background-color: transparent;
 }
 
-.bg-Alto {
-  --tw-bg-opacity: 1;
-  background-color: rgb(207 207 207 / var(--tw-bg-opacity));
-}
-
-.bg-\[url\(\.\/img\/banner\.webp\)\] {
-  background-image: url(./img/banner.webp);
+.bg-\[url\(\.\.\/img\/banner\.webp\)\] {
+  background-image: url(../img/banner.webp);
 }
 
 .bg-gradient-to-l {
