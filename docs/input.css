@@ -20,6 +20,21 @@ body {
     @apply aspect-[156/174] max-h-[156px] max-w-[174px] overflow-hidden md:aspect-[164/174] md:max-h-[164px] xl:aspect-[176/174] xl:max-h-[176px];
   }
   .product-img {
-    @apply h-full w-full object-cover;
+    @apply h-full w-full object-cover transition-transform group-hover:scale-150;
+  }
+  .input {
+    @apply h-14 w-full px-3 pt-5 text-Black font-normal text-base border-b-2 rounded outline-none focus:border-b-Black valid:border-b-Black placeholder:text-transparent bg-Alto;
+  }
+  .input-span {
+    @apply absolute left-3 top-4 text-Black font-normal text-base pointer-events-none transition-all peer-focus:text-Black peer-focus:text-xs peer-focus:translate-y-[-8px] peer-valid:text-Black peer-valid:text-xs peer-valid:translate-y-[-8px];
+  }
+  .input-invalid:not(:placeholder-shown) ~ .input-span {
+    @apply text-Black text-xs translate-y-[-8px];
+  }
+  .input-invalid:not(:placeholder-shown) ~ .input {
+    @apply border-b-Black;
+  }
+  .input-error-message {
+    @apply absolute top-[58px] xl:top-14 left-0 text-clr-error pointer-events-none font-medium text-sm xl:text-base;
   }
 }
