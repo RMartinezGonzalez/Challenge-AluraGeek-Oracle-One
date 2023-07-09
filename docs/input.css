@@ -17,7 +17,7 @@ body {
     @apply grid gap-2 content-center;
   }
   .product-container {
-    @apply aspect-[156/174] max-h-[156px] max-w-[174px] overflow-hidden md:aspect-[164/174];
+    @apply aspect-[156/174] max-h-[156px] max-w-[174px] overflow-hidden md:aspect-[164/174] md:max-h-[164px] xl:aspect-[176/174] xl:max-h-[176px];
   }
   .product-img {
     @apply h-full w-full object-cover;

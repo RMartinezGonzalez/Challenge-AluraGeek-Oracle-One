@@ -597,6 +597,14 @@ video {
 @media (min-width: 768px) {
   .product-container {
     aspect-ratio: 164/174;
+    max-height: 164px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .product-container {
+    aspect-ratio: 176/174;
+    max-height: 176px;
   }
 }
 
@@ -643,6 +651,10 @@ video {
   height: 77.6px;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .w-28 {
   width: 7rem;
 }
@@ -663,8 +675,8 @@ video {
   width: 100%;
 }
 
-.w-8\/12 {
-  width: 66.666667%;
+.max-w-\[71rem\] {
+  max-width: 71rem;
 }
 
 .transform {
@@ -703,8 +715,8 @@ video {
   justify-items: start;
 }
 
-.gap-1 {
-  gap: 0.25rem;
+.justify-items-center {
+  justify-items: center;
 }
 
 .gap-2 {
@@ -715,8 +727,8 @@ video {
   gap: 1rem;
 }
 
-.gap-3 {
-  gap: 0.75rem;
+.gap-8 {
+  gap: 2rem;
 }
 
 .scroll-smooth {
@@ -760,6 +772,10 @@ video {
 
 .bg-cover {
   background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
 }
 
 .bg-no-repeat {
@@ -829,6 +845,11 @@ video {
   color: rgb(250 250 250 / var(--tw-text-opacity));
 }
 
+.text-Alto {
+  --tw-text-opacity: 1;
+  color: rgb(207 207 207 / var(--tw-text-opacity));
+}
+
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
@@ -858,6 +879,14 @@ body {
     display: block;
   }
 
+  .md\:grid {
+    display: grid;
+  }
+
+  .md\:h-\[22rem\] {
+    height: 22rem;
+  }
+
   .md\:w-\[10\.375rem\] {
     width: 10.375rem;
   }
@@ -866,40 +895,59 @@ body {
     width: 17rem;
   }
 
+  .md\:gap-4 {
+    gap: 1rem;
+  }
+
+  .md\:p-8 {
+    padding: 2rem;
+  }
+
   .md\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
   }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 1280px) {
-  .xl\:w-\[393px\] {
-    width: 393px;
-  }
-
-  .xl\:w-\[14rem\] {
-    width: 14rem;
-  }
-
-  .xl\:w-\[13rem\] {
-    width: 13rem;
+  .xl\:h-\[119\.63px\] {
+    height: 119.63px;
   }
 
   .xl\:w-\[12rem\] {
     width: 12rem;
   }
 
-  .xl\:p-4 {
-    padding: 1rem;
+  .xl\:w-\[393px\] {
+    width: 393px;
   }
 
-  .xl\:px-36 {
-    padding-left: 9rem;
-    padding-right: 9rem;
+  .xl\:p-16 {
+    padding: 4rem;
   }
 
   .xl\:py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+
+  .xl\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
