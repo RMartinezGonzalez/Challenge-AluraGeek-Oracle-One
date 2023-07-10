@@ -936,6 +936,10 @@ video {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
+.bg-\[url\(\.\/img\/banner\.webp\)\] {
+  background-image: url(./img/banner.webp);
+}
+
 .from-Light-Black {
   --tw-gradient-from: #111 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(17 17 17 / 0) var(--tw-gradient-to-position);
