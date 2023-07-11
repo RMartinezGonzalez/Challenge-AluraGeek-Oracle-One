@@ -774,6 +774,10 @@ video {
   margin-bottom: 2rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .flex {
   display: flex;
 }
@@ -838,8 +842,20 @@ video {
   width: 100%;
 }
 
+.w-\[6\.81rem\] {
+  width: 6.81rem;
+}
+
 .max-w-\[71rem\] {
   max-width: 71rem;
+}
+
+.max-w-\[17\.1875rem\] {
+  max-width: 17.1875rem;
+}
+
+.max-w-\[20rem\] {
+  max-width: 20rem;
 }
 
 .transform {
@@ -936,8 +952,10 @@ video {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
-.bg-\[url\(\.\/img\/banner\.webp\)\] {
-  background-image: url(./img/banner.webp);
+.from-Dove-Gray {
+  --tw-gradient-from: #6b6b6b var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(107 107 107 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .from-Light-Black {
@@ -950,6 +968,10 @@ video {
   --tw-gradient-from: #424242 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(66 66 66 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-Boulder {
+  --tw-gradient-to: #787878 var(--tw-gradient-to-position);
 }
 
 .to-Cod-Gray {
@@ -997,6 +1019,21 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.py-\[5\.75rem\] {
+  padding-top: 5.75rem;
+  padding-bottom: 5.75rem;
+}
+
+.py-\[4\.75rem\] {
+  padding-top: 4.75rem;
+  padding-bottom: 4.75rem;
+}
+
+.px-\[2\.5rem\] {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .text-center {
@@ -1165,6 +1202,14 @@ body {
     margin-bottom: 0px;
   }
 
+  .xl\:mb-\[1\.55rem\] {
+    margin-bottom: 1.55rem;
+  }
+
+  .xl\:mt-\[1\.55rem\] {
+    margin-top: 1.55rem;
+  }
+
   .xl\:h-\[119\.63px\] {
     height: 119.63px;
   }
@@ -1177,12 +1222,28 @@ body {
     width: 393px;
   }
 
+  .xl\:w-full {
+    width: 100%;
+  }
+
+  .xl\:max-w-\[27rem\] {
+    max-width: 27rem;
+  }
+
+  .xl\:max-w-\[28rem\] {
+    max-width: 28rem;
+  }
+
   .xl\:grid-cols-\[1fr\2c 1fr\2c 35rem\] {
     grid-template-columns: 1fr 1fr 35rem;
   }
 
   .xl\:justify-items-start {
     justify-items: start;
+  }
+
+  .xl\:gap-\[1\.55rem\] {
+    gap: 1.55rem;
   }
 
   .xl\:p-16 {
@@ -1194,8 +1255,18 @@ body {
     padding-bottom: 2rem;
   }
 
+  .xl\:py-\[5\.75rem\] {
+    padding-top: 5.75rem;
+    padding-bottom: 5.75rem;
+  }
+
   .xl\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .xl\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }

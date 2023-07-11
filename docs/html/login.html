@@ -27,7 +27,7 @@
     >
       <div class="max-w-[71rem] flex items-center justify-between w-full">
         <!-- Logo -->
-        <a href="#" data-logo>
+        <a href="../index.html" data-logo>
           <h1 class="w-28 xl:w-[12rem]">
             <svg
               aria-label="AluraGeek Logo"
@@ -129,381 +129,55 @@
     <div
       class="bg-gradient-to-l from-Light-Black to-Cod-Gray h-[77.6px] xl:h-[119.63px]"
     ></div>
-    <!-- Hero -->
-    <section
-      class="bg-[url(../img/banner.webp)] bg-no-repeat bg-cover bg-center h-[12rem] p-4 text-Alabaster md:p-8 md:h-[22rem] grid justify-items-center"
-    >
-      <div
-        class="max-w-[71rem] grid gap-2 h-full w-full content-end justify-items-start md:gap-4"
-      >
-        <h2 class="font-bold text-xl md:text-5xl">Febrero Promocional</h2>
-        <p class="font-semibold text-sm md:text-xl">
-          Productos selecionados con 33% de descuento
-        </p>
-        <button class="btn">Ver Consolas</button>
-      </div>
-    </section>
-    <!-- Products -->
+    <!-- Form -->
     <main
-      class="grid gap-8 md:gap-16 justify-items-center p-4 bg-gradient-to-r from-Light-Black to-Cod-Gray text-Alabaster md:p-8 xl:p-16"
+      class="py-[4.75rem] xl:py-[5.75rem] px-[2.5rem] grid place-items-center bg-gradient-to-r from-Dove-Gray to-Boulder text-Alabaster"
     >
-      <!-- Products #1 -->
-      <article class="max-w-[71rem] grid gap-4 w-full">
-        <!-- Products Category -->
-        <div class="flex items-center justify-between">
-          <h3 class="font-bold text-xl xl:text-3xl">Star Wars</h3>
-          <a
-            href="./products"
-            class="flex items-center gap-2 font-bold text-sm md:text-base"
-            >Ver todo
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-4 h-4"
+      <form action="" class="text-center max-w-[71rem] w-full">
+        <fieldset class="grid justify-items-center gap-4 xl:gap-[1.55rem]">
+          <legend class="mb-4 xl:mb-[1.55rem] font-bold text-base xl:text-lg">
+            Inicial Sesión
+          </legend>
+          <div class="relative w-full max-w-[20rem] xl:max-w-[28rem]">
+            <input
+              class="input peer input-invalid"
+              id="email"
+              type="email"
+              required
+              placeholder="Escriba su correo electrónico"
+              pattern="[a-z0-9]+@[a-z]+\.[a-z]{2,3}"
+              title="ejemplo@mail.com"
+              autocomplete="email"
+            />
+            <label class="input-span" for="email"
+              >Escriba su correo electrónico</label
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-              />
-            </svg>
-          </a>
-        </div>
-        <!-- Products items -->
-        <section class="flex flex-wrap justify-center gap-4">
-          <!-- Product 1 -->
-          <figure class="product group">
-            <div class="product-container">
-              <img
-                class="product-img"
-                src="../img/sw1.webp"
-                alt="Producto XYZ"
-              />
-            </div>
-            <figcaption class="font-medium text-sm">Producto XYZ</figcaption>
-            <p class="font-bold text-base">R$ 60,00</p>
-            <a href="./products" class="font-bold text-sm text-Alto"
-              >Ver producto</a
+            <span class="input-error-message"></span>
+          </div>
+          <div class="relative w-full max-w-[20rem] xl:max-w-[28rem]">
+            <input
+              class="input peer input-invalid"
+              id="password"
+              type="password"
+              required
+              placeholder="Escriba su contraseña"
+              pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+              title="ocho digitos un numero, mayuscula, minuscula, y caracter especial"
+              autocomplete="current-password"
+            />
+            <label class="input-span" for="password"
+              >Escriba su contraseña</label
             >
-          </figure>
-          <!-- Product 1 -->
-          <figure class="product group">
-            <div class="product-container">
-              <img
-                class="product-img"
-                src="../img/sw1.webp"
-                alt="Producto XYZ"
-              />
-            </div>
-            <figcaption class="font-medium text-sm">Producto XYZ</figcaption>
-            <p class="font-bold text-base">R$ 60,00</p>
-            <a href="./products" class="font-bold text-sm text-Alto"
-              >Ver producto</a
-            >
-          </figure>
-          <!-- Product 1 -->
-          <figure class="product group">
-            <div class="product-container">
-              <img
-                class="product-img"
-                src="../img/sw1.webp"
-                alt="Producto XYZ"
-              />
-            </div>
-            <figcaption class="font-medium text-sm">Producto XYZ</figcaption>
-            <p class="font-bold text-base">R$ 60,00</p>
-            <a href="./products" class="font-bold text-sm text-Alto"
-              >Ver producto</a
-            >
-          </figure>
-          <!-- Product 1 -->
-          <figure class="product group">
-            <div class="product-container">
-              <img
-                class="product-img"
-                src="../img/sw1.webp"
-                alt="Producto XYZ"
-              />
-            </div>
-            <figcaption class="font-medium text-sm">Producto XYZ</figcaption>
-            <p class="font-bold text-base">R$ 60,00</p>
-            <a href="./products" class="font-bold text-sm text-Alto"
-              >Ver producto</a
-            >
-          </figure>
-          <!-- Product 1 -->
-          <figure class="hidden md:grid product group">
-            <div class="product-container">
-              <img
-                class="product-img"
-                src="../img/sw1.webp"
-                alt="Producto XYZ"
-              />
-            </div>
-            <figcaption class="font-medium text-sm">Producto XYZ</figcaption>
-            <p class="font-bold text-base">R$ 60,00</p>
-            <a href="./products" class="font-bold text-sm text-Alto"
-              >Ver producto</a
-            >
-          </figure>
-          <!-- Product 1 -->
-          <figure class="hidden md:grid product group">
-            <div class="product-container">
-              <img
-                class="product-img"
-                src="../img/sw1.webp"
-                alt="Producto XYZ"
-              />
-            </div>
-            <figcaption class="font-medium text-sm">Producto XYZ</figcaption>
-            <p class="font-bold text-base">R$ 60,00</p>
-            <a href="./products" class="font-bold text-sm text-Alto"
-              >Ver producto</a
-            >
-          </figure>
-        </section>
-      </article>
-      <!-- Products #1 -->
-      <article class="max-w-[71rem] grid gap-4 w-full">
-        <!-- Products Category -->
-        <div class="flex items-center justify-between">
-          <h3 class="font-bold text-xl xl:text-3xl">Star Wars</h3>
-          <a
-            href="./products"
-            class="flex items-center gap-2 font-bold text-sm md:text-base"
-            >Ver todo
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-4 h-4"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-              />
-            </svg>
-          </a>
-        </div>
-        <!-- Products items -->
-        <section class="flex flex-wrap justify-center gap-4">
-          <!-- Product 1 -->
-          <figure class="product group">
-            <div class="product-container">
-              <img
-                class="product-img"
-                src="../img/sw1.webp"
-                alt="Producto XYZ"
-              />
-            </div>
-            <figcaption class="font-medium text-sm">Producto XYZ</figcaption>
-            <p class="font-bold text-base">R$ 60,00</p>
-            <a href="./products" class="font-bold text-sm text-Alto"
-              >Ver producto</a
-            >
-          </figure>
-          <!-- Product 1 -->
-          <figure class="product group">
-            <div class="product-container">
-              <img
-                class="product-img"
-                src="../img/sw1.webp"
-                alt="Producto XYZ"
-              />
-            </div>
-            <figcaption class="font-medium text-sm">Producto XYZ</figcaption>
-            <p class="font-bold text-base">R$ 60,00</p>
-            <a href="./products" class="font-bold text-sm text-Alto"
-              >Ver producto</a
-            >
-          </figure>
-          <!-- Product 1 -->
-          <figure class="product group">
-            <div class="product-container">
-              <img
-                class="product-img"
-                src="../img/sw1.webp"
-                alt="Producto XYZ"
-              />
-            </div>
-            <figcaption class="font-medium text-sm">Producto XYZ</figcaption>
-            <p class="font-bold text-base">R$ 60,00</p>
-            <a href="./products" class="font-bold text-sm text-Alto"
-              >Ver producto</a
-            >
-          </figure>
-          <!-- Product 1 -->
-          <figure class="product group">
-            <div class="product-container">
-              <img
-                class="product-img"
-                src="../img/sw1.webp"
-                alt="Producto XYZ"
-              />
-            </div>
-            <figcaption class="font-medium text-sm">Producto XYZ</figcaption>
-            <p class="font-bold text-base">R$ 60,00</p>
-            <a href="./products" class="font-bold text-sm text-Alto"
-              >Ver producto</a
-            >
-          </figure>
-          <!-- Product 1 -->
-          <figure class="hidden md:grid product group">
-            <div class="product-container">
-              <img
-                class="product-img"
-                src="../img/sw1.webp"
-                alt="Producto XYZ"
-              />
-            </div>
-            <figcaption class="font-medium text-sm">Producto XYZ</figcaption>
-            <p class="font-bold text-base">R$ 60,00</p>
-            <a href="./products" class="font-bold text-sm text-Alto"
-              >Ver producto</a
-            >
-          </figure>
-          <!-- Product 1 -->
-          <figure class="hidden md:grid product group">
-            <div class="product-container">
-              <img
-                class="product-img"
-                src="../img/sw1.webp"
-                alt="Producto XYZ"
-              />
-            </div>
-            <figcaption class="font-medium text-sm">Producto XYZ</figcaption>
-            <p class="font-bold text-base">R$ 60,00</p>
-            <a href="./products" class="font-bold text-sm text-Alto"
-              >Ver producto</a
-            >
-          </figure>
-        </section>
-      </article>
-      <!-- Products #1 -->
-      <article class="max-w-[71rem] grid gap-4 w-full">
-        <!-- Products Category -->
-        <div class="flex items-center justify-between">
-          <h3 class="font-bold text-xl xl:text-3xl">Star Wars</h3>
-          <a
-            href="./products"
-            class="flex items-center gap-2 font-bold text-sm md:text-base"
-            >Ver todo
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-4 h-4"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-              />
-            </svg>
-          </a>
-        </div>
-        <!-- Products items -->
-        <section class="flex flex-wrap justify-center gap-4">
-          <!-- Product 1 -->
-          <figure class="product group">
-            <div class="product-container">
-              <img
-                class="product-img"
-                src="../img/sw1.webp"
-                alt="Producto XYZ"
-              />
-            </div>
-            <figcaption class="font-medium text-sm">Producto XYZ</figcaption>
-            <p class="font-bold text-base">R$ 60,00</p>
-            <a href="./products" class="font-bold text-sm text-Alto"
-              >Ver producto</a
-            >
-          </figure>
-          <!-- Product 1 -->
-          <figure class="product group">
-            <div class="product-container">
-              <img
-                class="product-img"
-                src="../img/sw1.webp"
-                alt="Producto XYZ"
-              />
-            </div>
-            <figcaption class="font-medium text-sm">Producto XYZ</figcaption>
-            <p class="font-bold text-base">R$ 60,00</p>
-            <a href="./products" class="font-bold text-sm text-Alto"
-              >Ver producto</a
-            >
-          </figure>
-          <!-- Product 1 -->
-          <figure class="product group">
-            <div class="product-container">
-              <img
-                class="product-img"
-                src="../img/sw1.webp"
-                alt="Producto XYZ"
-              />
-            </div>
-            <figcaption class="font-medium text-sm">Producto XYZ</figcaption>
-            <p class="font-bold text-base">R$ 60,00</p>
-            <a href="./products" class="font-bold text-sm text-Alto"
-              >Ver producto</a
-            >
-          </figure>
-          <!-- Product 1 -->
-          <figure class="product group">
-            <div class="product-container">
-              <img
-                class="product-img"
-                src="../img/sw1.webp"
-                alt="Producto XYZ"
-              />
-            </div>
-            <figcaption class="font-medium text-sm">Producto XYZ</figcaption>
-            <p class="font-bold text-base">R$ 60,00</p>
-            <a href="./products" class="font-bold text-sm text-Alto"
-              >Ver producto</a
-            >
-          </figure>
-          <!-- Product 1 -->
-          <figure class="hidden md:grid product group">
-            <div class="product-container">
-              <img
-                class="product-img"
-                src="../img/sw1.webp"
-                alt="Producto XYZ"
-              />
-            </div>
-            <figcaption class="font-medium text-sm">Producto XYZ</figcaption>
-            <p class="font-bold text-base">R$ 60,00</p>
-            <a href="./products" class="font-bold text-sm text-Alto"
-              >Ver producto</a
-            >
-          </figure>
-          <!-- Product 1 -->
-          <figure class="hidden md:grid product group">
-            <div class="product-container">
-              <img
-                class="product-img"
-                src="../img/sw1.webp"
-                alt="Producto XYZ"
-              />
-            </div>
-            <figcaption class="font-medium text-sm">Producto XYZ</figcaption>
-            <p class="font-bold text-base">R$ 60,00</p>
-            <a href="./products" class="font-bold text-sm text-Alto"
-              >Ver producto</a
-            >
-          </figure>
-        </section>
-      </article>
+            <span class="input-error-message"></span>
+          </div>
+        </fieldset>
+        <button
+          type="submit"
+          class="btn w-[6.81rem] xl:mt-[1.55rem] mt-4 xl:w-full xl:max-w-[28rem]"
+        >
+          Entrar
+        </button>
+      </form>
     </main>
     <!-- Contact -->
     <section
