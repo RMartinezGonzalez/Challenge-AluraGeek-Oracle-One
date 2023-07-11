@@ -131,49 +131,86 @@
     ></div>
     <!-- Form -->
     <main
-      class="py-[4.75rem] xl:py-[5.75rem] px-[2.5rem] grid place-items-center bg-gradient-to-r from-Dove-Gray to-Boulder text-Alabaster"
+      class="p-4 md:p-8 grid place-items-center bg-gradient-to-r from-Dove-Gray to-Boulder text-Alabaster"
     >
       <form action="" class="text-center max-w-[71rem] w-full">
         <fieldset class="grid justify-items-center gap-4 xl:gap-[1.55rem]">
-          <legend class="mb-4 xl:mb-[1.55rem] font-bold text-base xl:text-lg">
-            Inicial Sesión
+          <legend
+            class="w-full mb-4 xl:mb-[1.55rem] font-bold text-[22px] xl:text-[32px] max-w-[35rem] text-center"
+          >
+            Agregar nuevo producto
           </legend>
-          <div class="relative w-full max-w-[20rem] xl:max-w-[28rem]">
+          <div class="relative w-full max-w-[35rem]">
             <input
               class="input peer input-invalid"
-              id="email"
-              type="email"
+              id="url"
+              type="text"
               required
               placeholder=" "
-              pattern="[a-z0-9]+@[a-z]+\.[a-z]{2,3}"
-              title="ejemplo@mail.com"
-              autocomplete="email"
+              autocomplete="url"
             />
-            <label class="input-span" for="email"
-              >Escriba su correo electrónico</label
+            <label class="input-span" for="url">URL de la imagen</label>
+            <span class="input-error-message"></span>
+          </div>
+          <div class="relative w-full max-w-[35rem]">
+            <select
+              class="input peer input-invalid"
+              id="category"
+              type="text"
+              required
+              placeholder=" "
+            >
+              <option value="">Ingrese una opción</option>
+              <option value="starwars">StarWars</option>
+              <option value="consolas">Consolas</option>
+              <option value="diversos">Diversos</option>
+            </select>
+            <label class="input-span" for="category"
+              >Escriba su contraseña</label
             >
             <span class="input-error-message"></span>
           </div>
-          <div class="relative w-full max-w-[20rem] xl:max-w-[28rem]">
+          <div class="relative w-full max-w-[35rem]">
             <input
               class="input peer input-invalid"
-              id="password"
-              type="password"
+              id="product-name"
+              type="text"
               required
               placeholder=" "
-              pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
-              title="ocho digitos un numero, mayuscula, minuscula, y caracter especial"
-              autocomplete="current-password"
             />
-            <label class="input-span" for="password"
-              >Escriba su contraseña</label
+            <label class="input-span" for="product-name"
+              >Nombre del producto</label
+            >
+            <span class="input-error-message"></span>
+          </div>
+          <div class="relative w-full max-w-[35rem]">
+            <input
+              class="input peer input-invalid"
+              id="price"
+              type="text"
+              required
+              placeholder=" "
+            />
+            <label class="input-span" for="price">Precio del producto</label>
+            <span class="input-error-message"></span>
+          </div>
+          <div class="relative w-full max-w-[35rem]">
+            <textarea
+              class="input peer input-invalid resize-none h-20"
+              id="description"
+              type="text"
+              required
+              placeholder=" "
+            ></textarea>
+            <label class="input-span" for="description"
+              >Descripción del producto</label
             >
             <span class="input-error-message"></span>
           </div>
         </fieldset>
         <button
           type="submit"
-          class="btn w-[6.81rem] xl:mt-[1.55rem] mt-4 xl:w-full xl:max-w-[28rem]"
+          class="btn p-4 xl:mt-[1.55rem] mt-4 w-full max-w-[35rem]"
         >
           Entrar
         </button>
@@ -304,7 +341,7 @@
                 class="absolute top-0 rounded-tl w-[calc(100%-20px)] h-6 bg-Alto"
               ></div>
               <textarea
-                class="input peer resize-none h-20"
+                class="input peer input-invalid resize-none h-20"
                 name="message"
                 id="message"
                 required
